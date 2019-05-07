@@ -4,7 +4,23 @@ import { LayoutUsuariosComponent } from './layout-usuarios/layout-usuarios.compo
 
 const routes: Routes = [
   {
-    path: 'usuarios', component: LayoutUsuariosComponent
+    path: 'usuarios', component: LayoutUsuariosComponent,
+    children: [
+      {
+        path: 'inicio',
+        loadChildren: './modulos/inicio/inicio.module#InicioModule'
+      },
+      {
+        path: 'Acercade',
+        loadChildren: './modulos/acercade/acercade.module#AcercadeModule'
+      },
+      {
+        path: '',
+        redirectTo: 'inicio',
+        pathMatch: 'full'
+      },
+    ]
+
 
   },
   {

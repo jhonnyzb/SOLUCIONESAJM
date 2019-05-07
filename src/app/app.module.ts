@@ -5,10 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutUsuariosComponent } from './layout-usuarios/layout-usuarios.component';
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     LayoutUsuariosComponent
+   
   ],
   imports: [
     BrowserModule,
